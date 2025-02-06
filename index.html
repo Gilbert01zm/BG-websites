@@ -4,34 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tesa Debt Recovery Company</title>
-    <!-- Bootstrap CSS -->
+    
+    <!-- Bootstrap & FontAwesome -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
+
     <style>
         body {
-            background: linear-gradient(to right, #6a1b9a, #00bcd4); /* Purple and Sky Blue gradient */
+            background: linear-gradient(to right, #6a1b9a, #00bcd4);
             color: #333;
             font-family: Arial, sans-serif;
-            transition: background-color 0.3s ease; /* Body background transition */
         }
 
-        /* Navbar style with purple background and sky blue text */
         .navbar-purple {
-            background-color: #6a1b9a; /* Purple color */
-            transition: background-color 0.3s ease; /* Smooth background color transition */
+            background-color: #6a1b9a;
         }
 
         .navbar .nav-link {
-            color: #f6f8f8 !important; /* Sky Blue color */
-            transition: color 0.3s ease; /* Smooth color transition */
+            color: #f6f8f8 !important;
         }
 
         .navbar .nav-link:hover {
-            color: #4a99f3 !important; /* White on hover */
-        }
-
-        .navbar-toggler-icon {
-            transition: transform 0.3s ease; /* Smooth transition for the toggler icon */
+            color: #4a99f3 !important;
         }
 
         .hero {
@@ -44,151 +38,49 @@
             color: white;
             text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
             text-align: center;
-            opacity: 0;
-            animation: fadeIn 1s ease-in-out forwards; /* Fade-in animation for hero section */
-        }
-
-        .hero h1 {
-            font-size: 3.5rem;
-            transition: transform 0.3s ease; /* Smooth transition for heading */
-        }
-
-        .hero p {
-            font-size: 1.5rem;
-            transition: opacity 0.3s ease; /* Smooth opacity transition for paragraph */
         }
 
         .features .icon {
             font-size: 3rem;
-            color: #00bcd4; /* Sky Blue */
-            margin-bottom: 15px;
-            transition: transform 0.3s ease; /* Smooth scale transition on hover */
-        }
-
-        .features .icon:hover {
-            transform: scale(1.2); /* Slightly enlarges the icon on hover */
+            color: #00bcd4;
         }
 
         .btn-primary {
-            background-color: #6a1b9a; /* Purple */
-            border-color: #6a1b9a; /* Purple */
-            transition: transform 0.3s ease, background-color 0.3s ease; /* Smooth scale and background transition */
+            background-color: #6a1b9a;
+            border-color: #6a1b9a;
         }
 
         .btn-primary:hover {
-            background-color: #00bcd4; /* Sky Blue */
-            border-color: #00bcd4; /* Sky Blue */
-            transform: scale(1.1); /* Slightly scales the button */
-        }
-
-        .btn-secondary {
-            background-color: #00bcd4; /* Sky Blue */
-            border-color: #00bcd4; /* Sky Blue */
-            color: #fff;
-            transition: transform 0.3s ease, background-color 0.3s ease; /* Smooth scale and background transition */
-        }
-
-        .btn-secondary:hover {
-            background-color: #6a1b9a; /* Purple */
-            border-color: #6a1b9a; /* Purple */
-            color: #fff;
-            transform: scale(1.1); /* Slightly scales the button */
+            background-color: #00bcd4;
+            border-color: #00bcd4;
         }
 
         footer {
             background-color: #343a40;
             color: white;
             padding: 20px 0;
-            opacity: 0;
-            animation: fadeInFooter 1s ease-in-out forwards; /* Fade-in animation for footer */
         }
 
         footer a {
             color: #00bcd4;
             text-decoration: none;
-            transition: color 0.3s ease; /* Smooth color transition for links */
         }
 
         footer a:hover {
-            color: #4a99f3; /* Change link color on hover */
-        }
-
-        h2 {
-            color: #6a1b9a; /* Purple */
-            font-size: 2rem;
-            transition: transform 0.3s ease; /* Smooth transition for section titles */
+            color: #4a99f3;
         }
 
         .card {
             border: none;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s ease; /* Smooth scale transition on hover */
-        }
-
-        .card:hover {
-            transform: translateY(-10px); /* Slightly lifts the card on hover */
-        }
-
-        .card-body {
-            background-color: #ffffff;
-            border-radius: 8px;
-            transition: transform 0.3s ease; /* Smooth scale transition for card body */
         }
 
         .card-title {
-            color: #6a1b9a; /* Purple */
+            color: #6a1b9a;
         }
 
         .card-text {
             color: #333;
-        }
-
-        /* Animations */
-        @keyframes fadeIn {
-            from {
-                opacity: 0;
-            }
-            to {
-                opacity: 1;
-            }
-        }
-
-        @keyframes fadeInFooter {
-            from {
-                opacity: 0;
-            }
-            to {
-                opacity: 1;
-            }
-        }
-
-        /* Navbar items position for RTL toggle on small screens */
-        @media (max-width: 768px) {
-            .navbar-collapse {
-                text-align: right; /* Right align navbar items on small screens */
-            }
-            .navbar-toggler-icon {
-                transform: rotate(180deg); /* Flip the navbar toggle icon for RTL */
-            }
-        }
-
-        /* Responsive styles */
-        @media (max-width: 768px) {
-            .hero h1 {
-                font-size: 2.5rem;
-            }
-
-            .hero p {
-                font-size: 1.2rem;
-            }
-
-            .features .icon {
-                font-size: 2.5rem;
-            }
-
-            .card-body {
-                padding: 1.5rem;
-            }
         }
     </style>
 </head>
@@ -196,25 +88,24 @@
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-purple">
         <div class="container">
-            <img src="images/logo.png" alt="Logo" class="img-fluid" style="max-width: 60px; margin-bottom: 20px;">
+            <img src="images/logo.png" alt="Logo" class="img-fluid" style="max-width: 60px;">
             <a class="navbar-brand" href="index.html">Tesa Debt Recovery Management Limited</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="btn btn-primary me-2"  href="about_us.html"><i class="fas fa-info-circle"></i> About</a>
+                        <a class="btn btn-primary me-2" href="about_us.html"><i class="fas fa-info-circle"></i> About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="btn btn-primary me-2"  href="services.html"><i class="fas fa-cogs"></i> Services</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="btn btn-primary me-2" href="FAQ.html"><i class="fas fa-question-circle"></i>FAQs</a>
+                        <a class="btn btn-primary me-2" href="services.html"><i class="fas fa-cogs"></i> Services</a>
                     </li>
                     <li class="nav-item">
-                        <a class="btn btn-secondary" href="contact.html"><i class="fas fa-envelope"></i>Contact us</a>
+                        <a class="btn btn-primary me-2" href="FAQ.html"><i class="fas fa-question-circle"></i> FAQs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="btn btn-secondary" href="contact.html"><i class="fas fa-envelope"></i> Contact Us</a>
                     </li>
                 </ul>
             </div>
@@ -224,7 +115,7 @@
     <!-- Hero Section -->
     <div class="hero">
         <div>
-            <h1>Welcome to Tesa Debt Recovery</h1><br>
+            <h1>Welcome to Tesa Debt Recovery</h1>
             <p>Recovering Revenue Without Stripping Debtors Of Their Dignity</p>
         </div>
     </div>
@@ -238,7 +129,7 @@
                 <div class="col-md-4">
                     <div class="icon mb-3"><i class="fas fa-hand-holding-usd"></i></div>
                     <h4>Experienced Team</h4>
-                    <p>Our experienced team uses effective methods to recover your debts.</p>
+                    <p>Our team uses effective methods to recover your debts.</p>
                 </div>
                 <div class="col-md-4">
                     <div class="icon mb-3"><i class="fas fa-people-carry"></i></div>
@@ -254,77 +145,42 @@
         </div>
     </section>
 
-    <!-- Services Section -->
-    <section id="services" class="py-5 bg-light">
+    <!-- Company Profile Section -->
+    <section id="company-profile" class="py-5 text-center">
         <div class="container">
-            <h2 class="text-center">Our Debt Recovery Services</h2>
-            <p class="text-center mb-5">Effective debt collection for individuals and businesses</p>
-            <div class="row">
-                <div class="col-md-4 mb-4">
-                    <div class="card">
-                        <div class="card-body text-center">
-                            <i class="fas fa-users fa-3x mb-3"></i>
-                            <h5 class="card-title">Individual Debt Recovery</h5>
-                            <p class="card-text">Helping individuals recover outstanding debts with ease and efficiency.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 mb-4">
-                    <div class="card">
-                        <div class="card-body text-center">
-                            <i class="fas fa-briefcase fa-3x mb-3"></i>
-                            <h5 class="card-title">Business Debt Recovery</h5>
-                            <p class="card-text">Specialized services to help businesses recover overdue payments and reduce financial strain.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 mb-4">
-                    <div class="card">
-                        <div class="card-body text-center">
-                            <i class="fas fa-handshake fa-3x mb-3"></i>
-                            <h5 class="card-title">Negotiation Services</h5>
-                            <p class="card-text">We negotiate with debtors on your behalf to recover the funds owed to you.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <h2>Company Profile</h2>
+            <p class="mb-4">Download our company profile to learn more about our services.</p>
+            <a href="files/Tesa_Company_Profile.pdf" class="btn btn-primary btn-lg" download>
+                <i class="fas fa-file-pdf"></i> Download Company Profile
+            </a>
         </div>
     </section>
 
-    <!-- About Section -->
-    <section id="about" class="py-5">
+    <!-- Contact Section -->
+    <section id="contact" class="py-5 bg-light">
         <div class="container">
-            <h2 class="text-center">About Us</h2>
-            <p class="text-center mb-5">Tesa Debt Recovery is a trusted provider of professional debt recovery services across Zambia. We specialize in helping individuals and businesses recover overdue payments efficiently and securely.</p>
+            <h2 class="text-center">Contact Us</h2>
+            <p class="text-center mb-5">Get in touch with us for any debt recovery inquiries or support</p>
             <div class="row">
                 <div class="col-md-6">
-                    <p>Our mission is to help clients recover outstanding debts through ethical and professional means. We offer customized debt recovery solutions designed to meet the specific needs of each client, whether it's for personal or business-related debts. We believe in transparency, fairness, and confidentiality in all our dealings.</p>
+                    <p><strong>Address:</strong> Plot Number 2008, Kabwata Estate, off Dr. Aggrey Road</p>
+                    <p><strong>Email:</strong> <a href="mailto:tesarecoverymgt@gmail.com">tesarecoverymgt@gmail.com</a></p>
+                    <p><strong>Phone:</strong> +260975442038</p>
+                    <p><strong>Facebook:</strong> <a href="https://web.facebook.com/profile.php?id=100077659896353" target="_blank">Tesa Recovery Management Limited</a></p>
                 </div>
             </div>
         </div>
     </section>
-
-   <!-- Contact Section -->
-<section id="contact" class="py-5 bg-light">
-    <div class="container">
-        <h2 class="text-center">Contact Us</h2>
-        <p class="text-center mb-5">Get in touch with us for any debt recovery inquiries or support</p>
-        <div class="row">
-            <div class="col-md-6">
-                <p><strong>Address:</strong> Plot Number 2008, Kabwata Estate, off Dr. Aggrey Road</p>
-                <p><strong>Email:</strong> <a href="mailto:tesarecoverymgt@gmail.com">tesarecoverymgt@gmail.com</a></p>
-                <p><strong>Phone:</strong> +260975442038</p>
-                <p><strong>Facebook:</strong> <a href="https://web.facebook.com/profile.php?id=100077659896353&__cft__[0]=AZUsGS5_X8zhzbVQ1xCLlznwgJ0atveN8GxqVtfip_k_Y5_epmgwj_x8a39_FYfX9mLeK33OlNlNRSJzZr8tVtTSl_bLQ5LI_p2LjKtheBH97kZpuSAdO9rWpT0BOQRMoLbKcJN8_pTnOqxQmwp-poIiA_97hK4GZoJQB0zX0NnIMfjw-urGtqHWEAa1FNcnLg0&__tn__=-]K-R" target="_blank">Tesa Recovery Management Limited</a></p>
-            </div>
-        </div>
-    </div>
-</section>
 
     <!-- Footer -->
     <footer class="text-center">
         <div class="container">
             <p>&copy; 2024 Tesa Debt Recovery. All rights reserved.</p>
-            <p><a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a>|
+            <p><a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
         </div>
     </footer>
 
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
